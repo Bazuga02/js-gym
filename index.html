@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="nav">
+    <img src="img/hrx-gym-logo-lightskyblue-and-white-background-wi-upscaled.png" style="border-radius: 50%" />
+    <a href="fitnessclass.html" target="_self">
+      <h4>FITNESS CLASSES</h4>
+    </a>
+    <h4 id="personal-trainers-link">PERSONAL TRAINERS</h4>
+    <a href="equipment.html" target="_self">
+      <h4>EQUIPMENT & FACILITIES</h4>
+    </a>
+    <h4 id="diet-shop-link">DIET SHOP</h4>
+
+
+    <div class="center">
+      <button id="show-login">Login </button>
+    </div>
+
+
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2> <i class="fa-solid fa-dumbbell" style="color: #000000;"></i> Login <i class="fa-solid fa-dumbbell"
+            style="color: #000000;"></i> </h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" required />
+          <div id="emailError" style="color: red; font-weight: bold; font-style: italic;"></div>
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required />
+          <div id="passwordError" style="color: red; font-weight: bold; font-style: italic ;"></div>
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button onclick="validateForm()">Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Forgot password</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
+
+  <video autoplay loop muted src="img/website video 22.mp4"></video>
+
+  <div id="main">
+    <div id="page1">
+      <h1>LIFT.FUEL.THRIVE.</h1>
+      <h2>Welcome to HRX fitness gym!</h2>
+      <p>
+        At HRX Gym, we are driven by a passion for technology, personal
+        development, and making fitness enjoyable and accessible to all.
+      </p>
+    </div>
+    <div id="page2">
+      <div id="scroller">
+        <div id="scroller-in">
+          <h4>FITNESS CLASSES</h4>
+          <h4>PERSONAL TRAINING</h4>
+          <h4>EQUIPMENT & FACILITIES</h4>
+          <h4>DIET SHOP</h4>
+
+        </div>
+        <div id="scroller-in">
+          <h4>FITNESS CLASSES</h4>
+          <h4>PERSONAL TRAINERS</h4>
+          <h4>EQUIPMENT & FACILITIES</h4>
+          <h4>DIET SHOP</h4>
+
+        </div>
+      </div>
+      <div id="about-us">
+        <div class="bard">
+          <div class="wrapper">
+            <img src="img/adeeb.jpeg" class="cover-image" />
+          </div>
+          <img src="img/hrxhrx.png" class="title" />
+          <img src="/img/adeeb final.png" style="height: 60vh" class="character" />
+        </div>
+        <div id="about-us-in">
+          <h3>ABOUT US</h3>
+          <p>
+            HRX Gym is your premier fitness destination, featuring a
+            state-of-the-art fitness center, expert trainers, a refueling
+            coffee shop, and a pro shop for all your fitness needs. Discover a
+            new level of wellness at HRX Gym.
+          </p>
+        </div>
+        <div class="bard">
+          <div class="wrapper">
+            <img src="img/aman.jpeg" class="cover-image" />
+          </div>
+          <img src="img/hrxhrx.png" class="title" />
+          <img src="img/aman final.png" style="height: 60vh" class="character" />
+        </div>
+      </div>
+
+      <div id="cards-container">
+        <div class="card" id="card1">
+          <div class="overlay">
+            <h4>Fitness Classes</h4>
+            <p>
+              Led by certified instructors, our diverse range of classes
+              includes high-intensity workouts, yoga, and more, ensuring
+              there's something for everyone.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="overlay">
+            <h4>Equipment and Facilities</h4>
+            <p>
+              Discover top-notch fitness equipment and a spacious,
+              well-maintained environment at HRX Gym.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="overlay">
+            <h4>Personal Training</h4>
+            <p>
+              Unlock your fitness potential with personalized training at HRX
+              Gym. Our certified trainers are dedicated to helping you achieve
+              your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="blue-div">
+        <img src="img/rrrr.png" alt="" />
+        <h4>SIGN UP FOR NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX</h4>
+        <img src="img/rrrr.png" alt="" />
+      </div>
+    </div>
+    <div id="page3">
+      <div class="coffee-shop" id="coffee-shop">
+        <div class="slider" id="slider">
+          <div class="slide" style="background: url('img/egg.jpg') center/cover"></div>
+          <div class="slide" style="background: url('img/sandwhich.jpg') center/cover"></div>
+          <div class="slide" style="background: url('img/wrap.jpg') center/cover"></div>
+          <div class="slide" style="background: url('img/smoothie.jpg') center/cover"></div>
+          <div class="slide" style="background: url('img/oats.jpg') center/cover"></div>
+        </div>
+        <div class="diet-desc" id="diet-desc">
+          <p>
+          <h2>PROTEIN <span style="color: lightskyblue;">AND</span> DIET</h2>
+          <p>Discover our Diet Shop: your destination for a healthy and protein-rich culinary experience. Our carefully
+            crafted menu features an array of nutritious options, including protein-packed oats, yummy wraps, satisfying
+            sandwiches, rejuvenating smoothies, and delectable egg dishes. We're here to support your wellness journey
+            by offering wholesome and delicious choices that cater to your dietary needs. Whether you're a fitness
+            enthusiast, a health-conscious individual, or simply looking to nourish your body with quality ingredients,
+            our Diet Shop is your go-to destination for a flavorful and balanced diet.</p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="page4">
+      <div id="scroller">
+        <div id="scroller-in">
+          <img src="img/a1.jpeg" class="photu">
+          <img src="img/a2.jpeg" class="photu">
+          <img src="img/a3.jpeg" class="photu">
+          <img src="img/a4.jpeg" class="photu">
+          <img src="img/k1.jpeg" class="photu">
+        </div>
+        <div id="scroller-in">
+          <img src="img/a5.jpeg" class="photu">
+          <img src="img/a6.jpeg" class="photu">
+          <img src="img/a7.jpeg" class="photu">
+          <img src="img/a8.jpeg" class="photu">
+          <img src="img/k1.jpeg" class="photu">
+        </div>
+      </div>
+      <h3 id="fffl"> <i class="fa-brands fa-instagram" style="color: #d336a9;"></i> Follow us on <span
+          style="color:#d336a9 ;">Instagram</span> <span
+          style="color: lightskyblue; text-transform: lowercase;">(@hrx_gym)</span> </h3>
+    </div>
+
+    <div id="page4455">
+      <h2 id="meet">Meet Our <span class="red"> Expert </span> Trainers <span style="color: lightskyblue;"> !</span>
+      </h2>
+
+      <div class="trainer-container" id="trainer-container">
+        <div class="trainer">
+          <img src="img/pt1.png" alt="Trainer 1">
+          <div class="verlay">
+            <h3>Adeeb </h3>
+            <p> (Experienced Fitness Professional)</p>
+            <p> Accomplished personal trainer with a decade of experience and multiple fitness certifications. Known for
+              transforming clients' lives through customized workouts and nutrition guidance.</p>
+          </div>
+        </div>
+        <div class="trainer">
+          <img src="img/pt2.jpeg" alt="Trainer 2">
+          <div class="verlay">
+            <h3>Aman</h3>
+            <p>(Functional Fitness Guru)</p>
+            <p>Functional fitness expert who helps clients improve everyday movements and functionality. Combines
+              strength training and mobility exercises for pain-free living.</p>
+          </div>
+        </div>
+        <div class="trainer">
+          <img src="img/pt3.png" alt="Trainer 3">
+          <div class="verlay">
+            <h3>Prabhu</h3>
+            <p>(Strength and Conditioning Specialist)</p>
+            <p>Strength and conditioning specialist with a track record of producing outstanding results. Specializes in
+              athletic performance coaching and personalized training programs.</p>
+          </div>
+        </div>
+        <div class="trainer">
+          <img src="img/pt4.png" alt="Trainer 4">
+          <div class="verlay">
+            <h3>Priyanshu</h3>
+            <p> (Holistic Wellness Coach)</p>
+            <p>Weight loss and wellness coach with a background in nutrition science and holistic health. Focuses on
+              achieving balanced physical and mental well-being.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page5">
+
+      <div class="review-container" id="review">
+        <p></p>
+      </div>
+      <h2 id="sider"> WHAT ARE YOU WAITING FOR? </h2>
+    </div>
+
+    <footer>
+      <div class="bla">
+        <div class="inbox">
+          <h3>Get updates on fun stuff you probably want to know about in your inbox</h3>
+          <p>Email Address -> <span
+              style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">hrx6969@gmail.com</span>
+          </p>
+        </div>
+
+        <div class="menu">
+          <p style="font-weight: bold;">Options</p>
+          <p>Fitness classes </p>
+          <p>PERSONAL TRAINING </p>
+          <p>EQUIPMENT & FACILITIES</p>
+          <p>DIET SHOP </p>
+        </div>
+
+        <div class="support">
+          <p style="font-weight: bold;">Support</p>
+          <p>Help & FAQ</p>
+          <p>Terms and Conditions</p>
+          <p>Contact</p>
+        </div>
+
+        <div class="follow">
+          <div class="followup">
+            <p>Follow us </p>
+            <div class="icons">
+              <i class="fa-brands fa-instagram" style="color: #d336a9;"></i>
+              <i class="fa-brands fa-facebook" style="color: #2e7bff;"></i>
+              <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+              <i class="fa-brands fa-discord" style="color: #a32be3;"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="endimg">
+          <img src="img/hrx-gym-logo-lightskyblue-and-white-background-wi-upscaled.png">
+        </div>
+
+      </div>
+
+      <div class="copy">
+        <p>Copyright <i class="fa-solid fa-copyright" style="color: #000000;"></i> 2023 HRX Gym. All rights reserved.
+        </p>
+      </div>
+
+    </footer>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Classes</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Oswald&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+
+    #fitness-classes {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background: radial-gradient(circle at 10% 20%,
+          rgb(10, 174, 227) 0%,
+          rgb(124, 182, 255) 100.2%);
+    }
+
+    #explore {
+      font-family: cursive;
+      font-size: 3vh;
+
+    }
+
+    h1 {
+      color: white;
+      text-shadow: #333 2px 2px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font-size: 6vh;
+    }
+
+    .fitness-class {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      transition-duration: .5s;
+    }
+
+
+    .fitness-class:hover img {
+      display: none;
+
+    }
+
+    .fitness-class:hover {
+      background-color: white;
+
+    }
+
+    .fitness-class:hover>h2 {
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-shadow: none;
+      text-decoration: underline solid black;
+
+    }
+
+    .fitness-class:hover>p {
+      color: black;
+      /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+      text-shadow: none;
+
+    }
+
+    img {
+      max-width: 100%;
+      transition-duration: 2s;
+      border-radius: 10px;
+      transition-duration: 2s;
+      height: 30vh;
+    }
+
+    h2 {
+      color: lightskyblue;
+      text-shadow: black 2px 2px;
+      word-spacing: 2px;
+      font-family: "Permanent Marker", cursive;
+    }
+
+    p {
+      color: #333;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 700;
+      color: white;
+      font-size: 2.3vh;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .col {
+      width: calc(33.33% - 20px);
+    }
+
+    .fit {
+      display: flex;
+      align-items: center;
+      gap: 22%;
+      justify-content: center;
+    }
+
+
+
+
+    ul {
+      height: max-content;
+      display: flex;
+      list-style-type: none;
+      background-color: white;
+      border-radius: 30%;
+      /* padding: 1vh; */
+      gap: 5%;
+      padding: .5vh;
+      justify-content: center;
+      align-items: center;
+      font-family: "Oswald", sans-serif;
+      font-size: larger;
+      font-weight: bold;
+    }
+
+    li>img {
+      height: 10vh;
+      border-radius: 50%;
+      border: 3px solid black;
+
+    }
+
+    ul :hover {
+      background-color: black;
+      padding: 1vh;
+      color: white;
+      border-radius: 5vh;
+      transition-duration: .5s;
+    }
+
+    #image:hover {
+      background-color: lightskyblue;
+      border: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="fitness-classes">
+    <nav>
+      <ul>
+
+        <li><img id="image" src="/img/hrx-gym-logo-lightskyblue-and-white-background-wi-upscaled.png" alt=""></li>
+        <li><a href="/index.html" target="_self">HOME</a></li>
+        <li> <a href="/equipment.html" target="_self">EQUIPMENT & FACILITIES</a></li>
+
+      </ul>
+    </nav>
+    <div class="fit">
+      <!-- <img src="/img/hrx-gym-logo-lightskyblue-and-white-background-wi-upscaled.png" /> -->
+      <h1>Fitness Classes</h1>
+    </div>
+    <p id="explore">
+      Explore our diverse range of fitness classes to find the perfect fit for
+      your fitness journey.
+    </p>
+
+    <div class="row">
+      <div class="col">
+        <div class="fitness-class">
+          <img src="img/HIIT.jpg" alt="High-Intensity Interval Training (HIIT)" />
+          <h2>High-Intensity Interval Training (HIIT)</h2>
+          <p>
+            HIIT is a dynamic and challenging workout that combines short
+            bursts of intense exercise with short recovery periods. It's a
+            great way to boost your metabolism and burn calories.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="fitness-class">
+          <img src="img/yoga class.jpg" alt="Yoga and Mindfulness Classes" />
+          <h2>Yoga and Mindfulness Classes</h2>
+          <p>
+            Join our yoga and mindfulness classes to find inner peace, improve
+            flexibility, and reduce stress. It's a holistic approach to
+            fitness and well-being.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="fitness-class">
+          <img src="img/treadmill.jpg " alt="Cardio Workouts" />
+          <h2>Cardio Workouts</h2>
+          <p>
+            Cardio workouts are perfect for improving cardiovascular health
+            and endurance. Get your heart rate up with fun and energetic
+            exercises.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="fitness-class">
+          <img src="img/strength.jpg" alt="Strength and Conditioning" />
+          <h2>Strength and Conditioning</h2>
+          <p>
+            Our strength and conditioning classes focus on building muscle and
+            increasing overall strength. It's suitable for all fitness levels.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="fitness-class">
+          <img src="img/zumba.jpg" alt="Zumba and Dance Fitness" />
+          <h2>Zumba and Dance Fitness</h2>
+          <p>
+            Join the dance party with our Zumba and Dance Fitness classes.
+            It's a fun way to burn calories and improve coordination.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="fitness-class">
+          <img src="img/bootcamp.jpg" alt="Bootcamp Training" />
+          <h2>Bootcamp Training</h2>
+          <p>
+            Bootcamp training is an intense full-body workout that combines
+            strength, endurance, and agility training. It's a great way to
+            challenge yourself and see results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
